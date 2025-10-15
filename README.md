@@ -1,24 +1,34 @@
-# Build-a-checkout-page
-A simple and accessible checkout page with a cart preview and payment form. Includes required input indicators, ARIA attributes for accessibility, and help text for card number formatting.
+** start of index.html **
 
-A simple and accessible checkout page built with HTML. It allows users to review their cart and enter payment information in a clean, user-friendly layout.
+<!DOCTYPE html>
+<html lang="en">
 
-📋 Features
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
 
-Cart Preview: Displays a sample product image.
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="3D cubed structure game featuring colorful blocks arranged in geometric patterns, allowing players to build, stack, and navigate through cube-based environments.">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+ <label for="card-name">Card-holder name<span aria-hidden="true">*</span></label>
+ <input id="card-name" name="card-name" type="text" required>
+ <br>
+            <label for="card-number">Card-Number<span aria-hidden="true">*</span></label>
+            <input id="card-number" name="card-number" type="text" required aria-describedby="card-number-help">
+             <p id="card-number-help">Enter a 13–19 digit card number without letters or special characters.</p>
+        </form>
 
-Payment Form: Collects cardholder name and card number.
+    </section>
+    
+</body>
 
-Accessibility:
+</html>
 
-Required fields clearly marked with *.
-
-ARIA attributes (aria-hidden, aria-describedby) for screen readers.
-
-Help text explaining the required card number format.
-
-Semantic HTML: Uses proper structure with headings, sections, and form elements.
-
-🧠 Technologies Used
-
-HTML5
+** end of index.html **
